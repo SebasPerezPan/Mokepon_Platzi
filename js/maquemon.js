@@ -6,12 +6,12 @@ let result = ""
 
 
 function inicio () {
-    let sectionatack = document.getElementById("select_attack")
-    sectionatack.style.display = "none"
+    
 
     let buttonSJ = document.getElementById("button_s")
     buttonSJ.addEventListener("click", selectPJ)    
-
+    let sectionatack = document.getElementById("select_attack")
+    sectionatack.style.display = "none"
     let buttonF = document.getElementById ("button_f")
     buttonF.addEventListener("click", attackFire)
     let buttonW = document.getElementById ("button_w")
@@ -35,6 +35,8 @@ function selectPJ() {
     let inputPavaratta = document.getElementById("Pavaratta")
     let inputGia = document.getElementById("Gia")
     let petSelJ = document.getElementById("pet-j")
+
+    sectionatack.style.display = "block"
 
     //Condiciones
     if(inputMacadamio.checked) {       
@@ -64,7 +66,7 @@ function selectPJ() {
     else {
         alert("Please, choose a Pet!")
     }
-    
+
     selectEP ()
    
 
