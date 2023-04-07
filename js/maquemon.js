@@ -12,6 +12,8 @@ function inicio () {
     buttonSJ.addEventListener("click", selectPJ)    
     let sectionatack = document.getElementById("select_attack")
     sectionatack.style.display = "none"
+    let sectrestart = document.getElementById("restart")
+    sectrestart.style.display = "none"
     let buttonF = document.getElementById ("button_f")
     buttonF.addEventListener("click", attackFire)
     let buttonW = document.getElementById ("button_w")
@@ -35,7 +37,7 @@ function selectPJ() {
     let inputPavaratta = document.getElementById("Pavaratta")
     let inputGia = document.getElementById("Gia")
     let petSelJ = document.getElementById("pet-j")
-
+    let sectionatack = document.getElementById("select_attack")
     sectionatack.style.display = "block"
 
     //Condiciones
@@ -65,6 +67,8 @@ function selectPJ() {
     
     else {
         alert("Please, choose a Pet!")
+        sectionatack.style.display = "none"
+        return
     }
 
     selectEP ()
@@ -75,6 +79,9 @@ function selectPJ() {
 function selectEP () {
     let PetSelEn = document.getElementById("pet-e")
     let aleatorySelect = aleatorio(6,1)
+    let sectionper = document.getElementById("select_pet")
+    sectionper.style.display = ("none")
+
     if (aleatorySelect == 1) {
         PetSelEn.innerHTML = " Macadamio"
         
@@ -120,6 +127,9 @@ function attackPlant() {
 }
 
 function EnemAttack () {
+    let sectrestart = document.getElementById("restart")
+    sectrestart.style.display = "block"
+
     aleatoryAttack = aleatorio(3,1)
     if (aleatoryAttack == 1) {
         attackEn = "FIRE"
