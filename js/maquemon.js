@@ -6,8 +6,9 @@ let result = ""
 
 
 function inicio () {
-    let secsnd = document.getElementById("select_attack")
-    secsnd.style.display = "none"
+    let sectionatack = document.getElementById("select_attack")
+    sectionatack.style.display = "none"
+
     let buttonSJ = document.getElementById("button_s")
     buttonSJ.addEventListener("click", selectPJ)    
 
