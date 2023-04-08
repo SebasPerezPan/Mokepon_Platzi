@@ -1,49 +1,126 @@
-h1 {
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap');
 
-    color: rgb(139, 125, 193);
-    width: 590px;
-    height: 80px;
-    font-size: 3.052rem;
-    font-family: serif;
-    text-align: center;
-    align-items: center;
-    background-color: rgb(57, 26, 113);
+body {
+    font-family: 'Cinzel Decorative', cursive;
+    ;
+}
+#bannermini {
+
+    display: flex;
+    background-color: teal;
+    color: antiquewhite;
+    justify-content: center;
+    margin-top: 0px;
 
 }
 
-#spxd {
 
+#maquemontitle {
+    display: flex;
     color: rgb(139, 125, 193);
-    width: 200px;
-    height: 40px;
-    font-size: 2.052rem;
-    font-family: serif;
-    text-align:left;
-    align-items: center;
-    background-color: rgb(4, 4, 65);
+    width: 100v;
+    height: 100px;
+    font-size: 3.052rem;
+    text-align: center;
+    align-items: stretch;
+    background-color: rgb(57, 26, 113);
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-around;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin-top: 0px;
+    
 
 }
 
 #select_pet {
     
+    display: flex;
+    flex-direction: column;
     color: rgb(83, 64, 255);
     background-color: rgb(57, 26, 113);
-    width: 600px;
-    height: 125px;
+    /* width: 100vh; */
+    height: 1060px;
     font-size: 1rem;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#spxd {
+
+    color: rgb(139, 125, 193);
+    width: 325px;
+    height: 65px;
+    font-size: 2.052rem;
+    text-align: left;
+    align-items: center;
+    background-color: rgb(4, 4, 65);
+    border-color: blue;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
 }
+
 label {
 
+    display: flex;
     color: rgb(139, 125, 193);
     background-color: rgb(4, 4, 65);
     border: 1px solid black;
-
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 28px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-bottom-width: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    border-radius: 20px;
 }
 
 input {
-
+    display: flex;
     height: 2rem;
-    width: 1rem;
+    width: 2rem;
+    height: 2rem;
+    width: 2rem;
+    margin-left: 90px;
     
+}
+
+#button_s {
+    width: 116px;
+    height: 46px;
+    font-size: 25px;
+    padding: 2px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+    margin-top: 30px;
+    font-family: Cinzel Decorative;
+    padding-right: 10px;
+    padding-left: 5px
+}
+
+/* Seleccion de ataque CSS */
+
+#select_attack {
+
+    color: rgb(139, 125, 193);
+
 }
