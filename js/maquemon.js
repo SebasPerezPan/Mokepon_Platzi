@@ -23,6 +23,10 @@ function inicio () {
     let buttonR = document.getElementById("button_r")
     buttonR.addEventListener("click", restart)
     buttonR.disabled = true
+    let petSelFn = document.getElementById("Petselectionf")
+    petSelFn.style.display ="none" 
+    let textboxf = document.getElementsByClassName("hey")
+    textboxf.style.display = "none"
 }
 function aleatorio (max,min){
 return Math.floor(Math.random()*(max-min+1)+1)}
@@ -38,7 +42,7 @@ function selectPJ() {
     let inputGia = document.getElementById("Gia")
     let petSelJ = document.getElementById("pet-j")
     let sectionatack = document.getElementById("select_attack")
-    sectionatack.style.display = "block"
+    sectionatack.style.display = "flex"
 
     //Condiciones
     if(inputMacadamio.checked) {       
@@ -72,7 +76,9 @@ function selectPJ() {
     }
 
     selectEP ()
-   
+    let petSelFn = document.getElementById("Petselectionf")
+    petSelFn.style.display ="flex" 
+
 
 }
 
@@ -81,6 +87,7 @@ function selectEP () {
     let aleatorySelect = aleatorio(6,1)
     let sectionper = document.getElementById("select_pet")
     sectionper.style.display = ("none")
+
 
     if (aleatorySelect == 1) {
         PetSelEn.innerHTML = " Macadamio"
@@ -127,8 +134,7 @@ function attackPlant() {
 }
 
 function EnemAttack () {
-    let sectrestart = document.getElementById("restart")
-    sectrestart.style.display = "block"
+
 
     aleatoryAttack = aleatorio(3,1)
     if (aleatoryAttack == 1) {
@@ -151,7 +157,6 @@ function EnemAttack () {
 function combat () {  
     let ownlf = document.getElementById("olife")
     let elf = document.getElementById("elife")
-
 
     if(attackJ == attackEn) {
         result = "Tie"
@@ -196,7 +201,6 @@ function revisarVidas () {
 
     messageCreation ()
 
-
 }
 
 
@@ -211,6 +215,8 @@ function lastMessage (FinalResult) {
     let finalstr = document.getElementById("final")
     finalstr.appendChild(pinoccio)
     pinoccio.innerHTML = FinalResult
+    let sectrestart = document.getElementById("restart")
+    sectrestart.style.display = "block"
 
     let buttonF = document.getElementById ("button_f")
     buttonF.disabled = true
