@@ -142,10 +142,11 @@ input {
     border-color: buttonborder;
     border-image: initial;
     margin-top: 30px;
-    font-family: Cinzel Decorative;
     padding-right: 10px;
     padding-left: 5px;
     color: rgb(9, 9, 223);
+    border-radius: 10px;
+
 }
 
 /* Seleccion de ataque CSS */
@@ -160,10 +161,15 @@ input {
     align-content: flex-start;
     align-items: center;
     border-radius: 20px;
+    margin-left: 160px
 
 }
 
-
+button {
+    background:rgb(139, 125, 193) ;
+    border: 10px solid white; 
+    font-family: 'Alkatra', cursive;
+}
 
 .lives {
 
@@ -183,8 +189,8 @@ input {
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 20px;
-    align-items: flex-start;
-    width: 930px;
+    align-items: center;
+    width: 800px;
     height: 176px;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -219,6 +225,8 @@ input {
     padding-right: 10px;
     padding-left: 5px;
     color: rgb(111, 3, 3);
+    border: 5px solid rgb(111, 3, 3);
+
 }
 
 
@@ -237,6 +245,8 @@ input {
     padding-right: 10px;
     padding-left: 5px;
     color: rgb(5, 36, 102);
+    border: 5px solid rgb(5, 36, 102);
+
 }
 
 
@@ -255,6 +265,8 @@ input {
     padding-right: 10px;
     padding-left: 5px;
     color: teal;
+    border: 5px solid teal;
+
 }
 
 .restart {
@@ -263,7 +275,7 @@ input {
     flex-direction: row;
 }
 
-.hey {
+#hey {
 
     color: blanchedalmond;
     background-color: rgb(5, 36, 102);
@@ -271,4 +283,34 @@ input {
     height: 500px;
     margin-top: 30px;
     border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid black;
+}
+
+#restart {
+
+    display: flex;
+
+}
+
+#button_r {
+
+    height: 55px;
+    width: 140px;
+    font-size: 25px;
+    padding: 2px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+    margin-top: 30px;
+    padding-right: 10px;
+    padding-left: 5px;
+    color: rgb(9, 9, 223);
+    border-radius: 10px;
+    border: 5px solid rgb(9, 4, 98);
+
+
 }

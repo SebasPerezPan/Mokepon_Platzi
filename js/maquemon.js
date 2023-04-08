@@ -25,7 +25,7 @@ function inicio () {
     buttonR.disabled = true
     let petSelFn = document.getElementById("Petselectionf")
     petSelFn.style.display ="none" 
-    let textboxf = document.getElementsByClassName("hey")
+    let textboxf = document.getElementById("hey")
     textboxf.style.display = "none"
 }
 function aleatorio (max,min){
@@ -134,7 +134,8 @@ function attackPlant() {
 }
 
 function EnemAttack () {
-
+    let textboxf = document.getElementById("hey")
+    textboxf.style.display = "flex"
 
     aleatoryAttack = aleatorio(3,1)
     if (aleatoryAttack == 1) {
