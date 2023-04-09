@@ -192,12 +192,12 @@ function combat () {
 
 function revisarVidas () {
     if (ownLifes == 0) {
-        lastMessage("U Lose. Unu")
+        lastMessage("LOSE")
         
     }
 
     else if (enemLifes == 0)  {
-        lastMessage("U Win. :3")
+        lastMessage("WIN")
     }
 
     messageCreation ()
