@@ -1,28 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Cinzel+Decorative:wght@900&family=Delicious+Handrawn&display=swap');
-
-/*General Settings & Base settings*/
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&family=Oswald&display=swap');
 body {
-    font-family: 'Alkatra', cursive;
-    background-color: rgb(46, 16, 68);
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: rgb(249, 226, 175);
 }
-
+#fps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #bannermini {
     display: flex;
+    font-family: 'Oswald', sans-serif;
     background-color: teal;
-    color: antiquewhite;
+    color: rgb(249, 226, 175);
     justify-content: center;
     margin-top: 0px;
+    width: 100vi;
 }
 
 #maquemontitle {
     display: flex;
-    color: rgb(139, 125, 193);
-    width: 100v;
+    color: rgb(249, 226, 175);
+    width: 50vi;
     height: 100px;
     font-size: 3.052rem;
     text-align: center;
     align-items: stretch;
-    background-color: rgb(57, 26, 113);
+    background-color: teal;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
@@ -33,46 +37,52 @@ body {
     margin-inline-end: 0px;
     font-weight: bold;
     margin-top: 0px;
+    box-shadow: inset;
+    box-shadow: 1px 20px 20px 0px rgba(0,0,0,0.5);
 }
 
 /*First Screen*/
+#firstbox {
+    display: flex;
+    justify-content: center;
+}
+
 #select_pet { 
     display: flex;
     flex-direction: column;
-    color: rgb(83, 64, 255);
-    background-color: rgb(57, 26, 113);
-    height: 1060px;
+    color: rgb(249, 226, 175);
+    background-color: teal;
+    height: 900px;
     font-size: 1rem;
     align-content: flex-end;
-    flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.5);
+    width: 1400px;
 }
 
 .spxd {
-    color: rgb(139, 125, 193);
+    color: rgb(249, 226, 175);
     width: 325px;
     height: 65px;
     font-size: 2.052rem;
     text-align: left;
     align-items: center;
-    background-color: rgb(4, 4, 65);
-    border-color: blue;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
+    background-color: teal;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     border-radius: 8px;
+    border: solid black;
 }
 .three {
     display: flex;
 }
 
-.pav {
+.mac {
     display: flex;
-    color: rgb(139, 125, 193);
-    background-color: rgb(4, 4, 65);
+    color: rgb(249, 226, 175);
+    background-color: rgb(0, 159, 189);
     border: 1px solid black;
     padding-top: 10px;
     padding-right: 10px;
@@ -91,9 +101,68 @@ body {
     margin-right: 40px;
     width: 320px;
     height: 245px;
+    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.5);
+}
+.mac img {
+   width: 100px;
+   height: 150px; 
+}
+.damio {
+    display: flex;
+    color: rgb(249, 226, 175);
+    background-color: rgb(0, 159, 189);
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 28px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-bottom-width: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 320px;
+    height: 245px;
+    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.5);
+
+}
+.damio img {
+    width: 150px;
+    height: 100px; 
+}
+.pav {
+    display: flex;
+    color: rgb(249, 226, 175);
+    background-color: rgb(0, 159, 189);
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-size: 28px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-bottom-width: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 320px;
+    height: 245px;
+    box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.5);
+
 }
 
-.Petboxes img {
+.pav img {
     width: 120px;
     height: 120px;
 }
@@ -101,7 +170,10 @@ body {
 input {
     display: none;
 }
-
+input:checked + label{
+    background-color: blue;
+    border-radius:100%;
+}
 #button_s {
     width: 116px;
     height: 46px;
@@ -114,14 +186,42 @@ input {
     margin-top: 30px;
     padding-right: 10px;
     padding-left: 5px;
-    color: rgb(9, 9, 223);
+    color: rgb(249, 226, 175);
     border-radius: 10px;
 }
 
 /* Second Screen */
 
+#Orgn {
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+}
+
+#secScrPZ{
+    display: grid;
+    grid-template-rows: 33.3% 33.3% 33.3% ;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    width: 70vi;
+    height: 35vi ;
+    background-image: url("../resources/CampNou.jpg");    
+}
+#enempetbox {
+    grid-row: 1/2 ;
+    grid-column: 2/3;
+}
+#ownpet {
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+#secgrd {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3% ;
+}
+
 #select_attack {
-    background-color: rgb(57, 26, 113);
+    background-color: rgb(237, 188, 82);
     display: flex;
     height: 300px;
     width: 500px;
@@ -129,20 +229,18 @@ input {
     align-content: flex-start;
     align-items: center;
     border-radius: 20px;
-    margin-left: 160px
+    border: 5px solid black;
 }
 
 button {
-    background:rgb(139, 125, 193) ;
+    background:rgb(33, 0, 98) ;
     border: 10px solid white; 
     font-family: 'Alkatra', cursive;
 }
 
 .lives {
     display: flex;
-    color: rgb(139, 125, 193);
-    background-color: rgb(4, 4, 65);
-    border: 1px solid black;
+    color: rgb(0, 0, 0);
     padding-top: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
@@ -170,12 +268,13 @@ button {
 
 #buttonstore {
     display: flex;
-    background-color: rgb(4, 4, 65);
+    background-color: teal;
     border-radius: 20px;
     height: 110px;
     width: 376px;
     padding-bottom: 30px;
     justify-content: space-evenly;
+    border: solid black;
 }
 
 
@@ -189,12 +288,12 @@ button {
     border-color: buttonborder;
     border-image: initial;
     margin-top: 30px;
-    font-family: Cinzel Decorative;
     padding-right: 10px;
     padding-left: 5px;
-    color: rgb(111, 3, 3);
-    border: 5px solid rgb(111, 3, 3);
+    color: rgb(175, 75, 75);
+    border: 5px solid rgb(175, 75, 75);
     border-radius: 10px;
+    background-color:rgb(237, 188, 82) ;
 }
 
 #button_w {
@@ -207,11 +306,10 @@ button {
     border-color: buttonborder;
     border-image: initial;
     margin-top: 30px;
-    font-family: Cinzel Decorative;
     padding-right: 10px;
     padding-left: 5px;
-    color: rgb(5, 36, 102);
-    border: 5px solid rgb(5, 36, 102);
+    color: rgb(80, 115, 188);
+    border: 5px solid rgb(80, 115, 188);
     border-radius: 10px;
 }
 
@@ -222,31 +320,54 @@ button {
     padding: 2px 6px;
     border-width: 2px;
     border-style: outset;
-    border-color: buttonborder;
+    border: 5px solid black;
     border-image: initial;
     margin-top: 30px;
-    font-family: Cinzel Decorative;
     padding-right: 10px;
     padding-left: 5px;
-    color: teal;
-    border: 5px solid teal;
+    color: rgb(16, 92, 5);
     border-radius: 10px;
+    background-color: rgb(108, 76, 18);
+}
+
+#button_n {
+    width: 116px;
+    height: 46px;
+    font-size: 22px;
+    padding: 2px 6px;
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: rgb(130, 123, 110);
 }
 
     /*Alertas y resultados*/
+
+           
 #hey {
     color: blanchedalmond;
     background-color: rgb(5, 36, 102);
-    width: 800px;
-    height: auto;
-    margin-top: 30px;
-    border-radius: 3%;
+    width: 300px;
+    height: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 20px;
     border: 5px solid black;
-}
+    box-sizing: border-box;
 
+}
+#hey img {
+    width: 46px;
+    height: 58px;
+}
+#lstMess {
+
+    color: teal;
+    font-size: 30px;
+
+
+
+}
 #restart {
     display: flex;
 }
@@ -277,4 +398,49 @@ button {
 .type {
     display: flex;
     margin-left: 10px
+}
+#histGame {
+    background-color: rgb(218, 199, 172);
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    border: 5px solid black;
+}
+#enmattaq {
+    color: brown;
+}
+#ownattaq {
+    color: green;
+}
+
+@media (max-width: 500px) {
+    .three, #secgrd, #secScrPZ{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: 55vi;
+        padding: 0%;
+    }
+    .pav , .damio , .mac {
+        font-size: 0;
+        height: 40px;
+        width: 40px;
+        padding-top: 0%;
+        padding-right: 0;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        border-right-width: 0px;
+        border-top-width: 0px;
+        border-left-width: 0px;
+        border-bottom-width: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+    .damio img, .pav img, .mac img {
+        height: 40px;
+        width: 40px;
+    }
+    
 }

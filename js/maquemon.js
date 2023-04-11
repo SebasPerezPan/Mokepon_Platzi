@@ -27,6 +27,10 @@ function inicio () {
     petSelFn.style.display ="none" 
     let textboxf = document.getElementById("hey")
     textboxf.style.display = "none"
+    let historial = document.getElementById("histGame")
+    historial.style.display="none"
+    let sectiontwo =document.getElementById("secScrPZ")
+    sectiontwo.style.display="none"
 }
 function aleatorio (max,min){
 return Math.floor(Math.random()*(max-min+1)+1)}
@@ -78,7 +82,8 @@ function selectPJ() {
     selectEP ()
     let petSelFn = document.getElementById("Petselectionf")
     petSelFn.style.display ="flex" 
-
+    let sectiontwo =document.getElementById("secScrPZ")
+    sectiontwo.style.display="grid"
 
 }
 
@@ -136,6 +141,9 @@ function attackPlant() {
 function EnemAttack () {
     let textboxf = document.getElementById("hey")
     textboxf.style.display = "flex"
+    let historial = document.getElementById("histGame")
+    historial.style.display="flex"
+
 
     aleatoryAttack = aleatorio(3,1)
     if (aleatoryAttack == 1) {
@@ -156,44 +164,42 @@ function EnemAttack () {
 
 }
 function combat () {  
-    let ownlf = document.getElementById("olife")
-    let elf = document.getElementById("elife")
 
+    let spOwnLf = document.getElementById("oLife")
+    let spEnmLf = document.getElementById("eLife")
+    
     if(attackJ == attackEn) {
-        result = "Tie"
+        batMess = "TIE"
     }
     else if(attackJ == "FIRE" && attackEn == "PLANT") {
-        result = "Win"
+        batMess = "WIN"
         enemLifes--
-        elf.innerHTML = enemLifes
-
-
-    }
-    else if(attackJ == "WATER" && attackEn == "FIRE") {
-        result = "Win"
-        enemLifes--
-        elf.innerHTML = enemLifes
+        spEnmLf.innerHTML=enemLifes
     }
     else if(attackJ == "PLANT" && attackEn == "WATER") {
-        result = "Win"
+        batMess = "WIN"
         enemLifes--
-        elf.innerHTML = enemLifes
-        
+        spEnmLf.innerHTML=enemLifes
+    }
+    else if(attackJ == "WATER" && attackEn == "FIRE") {
+        batMess = "WIN"
+        enemLifes--
+        spEnmLf.innerHTML=enemLifes
     }
     else {
-        result = "Lose"
+        batMess = "LOSE"
         ownLifes--
-        ownlf.innerHTML = ownLifes
+        spOwnLf.innerHTML=ownLifes
     }
 
-    revisarVidas ()
+    checkLifes ()
 
 }
 
-function revisarVidas () {
+function checkLifes () {
     if (ownLifes == 0) {
         lastMessage("LOSE")
-        
+
     }
 
     else if (enemLifes == 0)  {
@@ -206,15 +212,26 @@ function revisarVidas () {
 
 
 function messageCreation () {
-    let parag = document.createElement("p")
-    let addits = document.getElementById("alerts")
-    addits.appendChild(parag)
-    parag.innerHTML = "Your Pet Attack with "+ attackJ + ", Enemies Pet attack with " + attackEn + ", You " + result + "."
+    //let parag = document.createElement("p")
+    let messageSect = document.getElementById("result")
+    let ownAtMess = document.getElementById("ownattaq")
+    let enmAtMess = document.getElementById("enmattaq")
+    let nOAttaq = document.createElement('p')
+    let nEAttaq = document.createElement('p')
+    
+    messageSect.innerHTML = batMess
+    nOAttaq.innerHTML = attackJ
+    nEAttaq.innerHTML = attackEn
+
+    ownAtMess.appendChild(nOAttaq)
+    enmAtMess.appendChild(nEAttaq)
+
+    //parag.innerHTML = "Your Pet Attack with "+ attackJ + ", Enemies Pet attack with " + attackEn + ", You " + result + "."
 }
 function lastMessage (FinalResult) {
     let pinoccio = document.createElement("p")
-    let finalstr = document.getElementById("final")
-    finalstr.appendChild(pinoccio)
+    let finalStr = document.getElementById("lstMess")
+    finalStr.appendChild(pinoccio)
     pinoccio.innerHTML = FinalResult
     let sectrestart = document.getElementById("restart")
     sectrestart.style.display = "block"
@@ -227,6 +244,8 @@ function lastMessage (FinalResult) {
     buttonP.disabled = true
     let buttonR = document.getElementById("button_r")
     buttonR.disabled = false
+    let batMess = document.getElementById("result")
+    batMess.style.display = "none"
 }
 
 function restart (){

@@ -1,109 +1,113 @@
 <!DOCTYPE html>
 <html>
 <head> <title>Maquemon</title>
-<script src="./js/maquemon.js"></script>
 <link rel="stylesheet" href="./css/design.css">
 </head>
 <body>
+    <div id="fps">
     <p id="bannermini">🌱Maquemon!🌊 Don't buy, Just Take!🔥</p>
     <h1 id="maquemontitle">MAQUEMON!</h1>
-
+    </div>
+<div id="firstbox">
     <section id ="select_pet">
         <h2 class="spxd">Select a Pet:</h2>
 
         <div class="three">
-            <div class="pav">                  
+            <div class="damio">                  
                 <input type="radio" name="mascota" id="Macadamio">
                 <label class = "Petboxes" for="Macadamio">
                     <p>Macadamio 🌱🌱</p>
-                    <img src="./resources/Macadamio.jpg" alt="Macadamio">
+                    <img src="./resources/Macadamio.png" alt="Macadamio">
                 </label>
             </div>
 
-            <div class="pav">                  
+            <div class="mac">  
+                <input type="radio" name="mascota" id="Gia">                
                     <label class = "Petboxes" for="Gia">
                         <p>Gia 🪨🪨</p>
-                        <img src="./resources/Gio.jpg">
+                        <img src="./resources/Gia.png">
                     </label>
-                    <input type="radio" name="mascota" id="Gia">
             </div>
             <div class="pav">                  
                 <input type="radio" name="mascota" id="Manchega">
                 <label class = "Petboxes" for="Manchega">
                     <p>Manchega 🌊🌊</p>
-                    <img src="./resources/Manchega.jpg">
+                    <img src="./resources/Manchega.png">
                 </label>
             </div>
         </div>
         <div class="three">
-            <div class="pav">
+            <div class="mac">
                 <input type="radio" name="mascota" id="Pino">
                 <label class = "Petboxes" for="Pino">
                     <p>Pino ❄️❄️</p>
-                    <img src="./resources/Pino.jpg">
+                    <img src="./resources/Pino.png">
                 </label>
             </div>
             <div class="pav">                  
                 <input type="radio" name="mascota" id="Pavaratta">
                 <label class = "Petboxes" for="Pavaratta">
                     <p>Pavaratta 🔥🔥</p>
-                    <img src="./resources/Pavaratta.jpg">
+                    <img src="./resources/Pavaratta.png">
                 </label>
             </div>
             <div class="pav">                  
                 <input type="radio" name="mascota" id="Andamio">
                 <label class = "Petboxes" for="Andamio">
                     <p>Andamio 🌋🌋</p>
-                    <img src="./resources/Andamio.jpg">
+                    <img src="./resources/Andamio.png">
                 </label>
             </div>
         </div>
         <button id="button_s">Select</button>
     </section>
-   
-    <section id="Petselectionf">
-        <div class="lives">
-            <p>Your Pet,<span id="pet-j">Choose a Pet</span>: <span id = "olife">3 </span></p> <img src="./resources/hearth.png">
-            <p>Enemies Pet, <span id = "pet-e"> -He's waiting for you to choose xd- </span>: <span id = "elife">3 </span> </p> <img src="./resources/hearth.png">
+</div>
+    <div id="Orgn">
+    <div id="secScrPZ">
+        <div id="Petselectionf">
+            <div id="enempetbox" class="lives">
+                <p>Enemies Pet, <span id = "pet-e"> -He's waiting for you to choose xd- </span>: <span id = "eLife"> 3</span> </p> <img src="./resources/hearth.png">
+                </div>
+            <div id="ownpet">
             </div>
-        <div id="ownpet">
-
         </div>
+        <div id="Petselectionf">
+            <div id="ownpetbox" class="lives">
+                <p>Your Pet,<span id="pet-j">Choose a Pet</span>: <span id = "oLife">3 </span></p> <img src="./resources/hearth.png">
+            </div>
+        </div>
+    </div>
+    <section id="secgrd">
+        <section id="hey">
+            <div>
+                <p id="result"></p>
+                <div id="lstMess"></div>
+            </div>
+            <div id="restart">
+                <button id="button_r">Restart</button>
+            </div>
+        </section>
+        <section id = "histGame">
+        <div id="ownattaq"></div>
+        <div id="enmattaq"></div>
+        </section>
+        <section id ="select_attack">
+            <h2 class="spxd">Select Attack:</h2>
+            <div class="buttonstore">
+                <p>
+                    <button id="button_f">FIRE 🔥</button>
+                    <button id="button_w">WATER 💧</button>
+                </p>
+            </div>
+            <div class="buttonstore">
+                <p>
+                    <button id="button_p">PLANT 🌱</button>
+                    <button id="button_n">NORMAL 👊🏽</button>
+                </p>
+            </div>
+        </section>
     </section>
-
-    <section id ="select_attack">
-
-        <h2 class="spxd">Select Attack:</h2>
-
-        <div id="buttonstore">
-            <p>
-                <button id="button_f">FIRE 🔥</button>
-                <button id="button_w">WATER 💧</button>
-                <button id="button_p">PLANT 🌱</button>
-            </p>
-        </div>
-    </section>
-
-    <section id="hey">
-        <div>
-            <section id = "alerts">
-            </section>
-            <section id = "final">
-            </section>
-        </div>
-        
-        <div id="restart">
-            <button id="button_r">Restart</button>
-        </div>
-    </section>
-
-
-
-    
+    </div>
+    <script src="./js/maquemon.js"></script>
 </body>
-
-
-
-
-
 </html>
